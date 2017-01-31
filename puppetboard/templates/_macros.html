@@ -96,6 +96,9 @@
   var table = $('#{{ table_html_id }}').DataTable({
     // Permit flow auto-readjust (responsive)
     "autoWidth": false,
+    // Save order/filter informations to sessionStorage
+    "stateSave": true,
+    "stateDuration": -1,
     // Activate "processing" message
     "processing": true,
     // Activate Ajax mode
